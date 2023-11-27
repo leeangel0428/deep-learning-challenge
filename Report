@@ -1,0 +1,27 @@
+**Overview:**
+The purpose of this analysis is to create a binary classifier using features from the provided dataset that can predict whether applicants will be successful, if they were funded by the Alphabet Soup foundation (fictional).
+
+
+**Results**:
+Data Preprocessing:
+- Target Variable: IS_SUCCESSFUL
+- Feature Variables: All other columns except EIN and NAME which were removed.
+
+Compiling, Training, and Evaluating the Model:
+- First Run: 14 neurons (2 input, 8 in hidden layer 1, 3 in hidden layer 2, 1 output), 3 layers (2 hidden), 100 epoch, 2 activation functions (relu and sigmoid)
+
+![8-3-100](https://github.com/leeangel0428/credit-risk-classification/assets/137225965/bc066db4-e868-48bd-811f-b96f2f54e812)
+
+- Second Run: 16 neurons (2 input, 8 in hidden layer 1, 5 in hidden layer 2, 1 output), 3 layers (2 hidden), 100 epoch, 2 activation functions (relu and sigmoid)
+
+![8-5-100](https://github.com/leeangel0428/credit-risk-classification/assets/137225965/e808a381-ad30-4608-8904-45d9b28aca43)
+
+- Third Run: 16 neurons (2 input, 8 in hidden layer 1, 5 in hidden layer 2, 1 output), 3 layers (2 hidden), 200 epoch, 2 activation functions (relu and sigmoid)
+
+![8-5-200](https://github.com/leeangel0428/credit-risk-classification/assets/137225965/ad8e5894-cadd-437d-9788-a66d4b2b231f)
+
+- I was unable to achieve the target model performance of 75%. I got close at 73% with my second run.
+- I thought maybe adding more epochs would help. It did not.
+
+**Summary:**
+I created 3 different models but the best was my second model. It had an accuracy of 73%. I would not make any major adjustments to my second model as I think it it pretty close to the target model performance. I'm not sure what would make it better with my limited knowledge. Perhaps maybe creating bins, adding another layer, or even reducing the number of epochs in the training regimen.
